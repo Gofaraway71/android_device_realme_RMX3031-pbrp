@@ -17,7 +17,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := RMX3031
+PRODUCT_RELEASE_NAME := RMX2151
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -25,15 +25,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Inherit from RMX3031 device
-$(call inherit-product, device/realme/RMX3031/device.mk)
+$(call inherit-product, device/realme/RMX2151/device.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/pb/config/common.mk)
 
-PRODUCT_DEVICE := RMX3031
-PRODUCT_NAME := omni_RMX3031
+PRODUCT_DEVICE := RMX2151
+PRODUCT_NAME := omni_RMX2151
 PRODUCT_BRAND := Realme
-PRODUCT_MODEL := X7 Max
+PRODUCT_MODEL := Realme 7
 PRODUCT_MANUFACTURER := Realme
 
 # HACK: Set vendor patch level
